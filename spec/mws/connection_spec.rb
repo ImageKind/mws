@@ -175,7 +175,7 @@ module Mws
       it 'should parse error messages correctly' do
         body = <<-XML
         <?xml version="1.0"?>
-        <ErrorResponse xmlns="https://mws.amazonservices.com/Orders/2011-01-01">
+        <ErrorResponse xmlns="https://mws.amazonservices.com/Orders/2013-09-01">
           <Error>
             <Type>Sender</Type>
             <Code>InvalidParameterValue</Code>
@@ -196,7 +196,7 @@ module Mws
       it 'should parse result based on custom action' do
         body = <<-XML
         <?xml version="1.0"?>
-        <ListOrdersResponse xmlns="https://mws.amazonservices.com/Orders/2011-01-01">
+        <ListOrdersResponse xmlns="https://mws.amazonservices.com/Orders/2013-09-01">
           <ListOrdersResult>
             <Orders/>
             <CreatedBefore>2012-11-19T20:54:33Z</CreatedBefore>
@@ -212,7 +212,7 @@ module Mws
       it 'shoudl parse result base on custom xpath' do
         body = <<-XML
         <?xml version="1.0"?>
-        <ListOrdersResponse xmlns="https://mws.amazonservices.com/Orders/2011-01-01">
+        <ListOrdersResponse xmlns="https://mws.amazonservices.com/Orders/2013-09-01">
           <ListOrdersResult>
             <Orders/>
             <CreatedBefore>2012-11-19T20:54:33Z</CreatedBefore>
