@@ -5,7 +5,7 @@ class Mws::Apis::Products
       market: 'ATVPDKIKX0DER'
     }.merge overrides
     @option_defaults = {
-      version: '2011-10-01'
+      version: '2013-09-01'
     }
   end
 
