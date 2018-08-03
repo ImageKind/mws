@@ -7,7 +7,7 @@ module Mws::Apis::Feeds
     def initialize(connection, defaults={})
       raise Mws::Errors::ValidationError, 'A connection is required.' if connection.nil?
       @connection = connection
-      defaults[:version] ||= '2009-01-01'
+      defaults[:version] ||= '2013-09-01'
       @defaults = defaults
 
       @products = self.for :product
